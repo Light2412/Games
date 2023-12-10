@@ -1,9 +1,55 @@
 ﻿@page "/"
-
 <PageTitle>Index</PageTitle>
+<h1>Welcome to Gamers4Lyfe Pte Ltd</h1>
+<h3> Who We Are</h3>
 
-<h1>Hello, world!</h1>
+<p>
+    We are a team of dedicated individuals who aims to deliver quality services to our users.Through our website, you can view
+    and download available games as well as new releases that suits your taste. We will also improve our website consistently
+    to make our users satisfied as well as to attract new users.
+</p>
+<style>
 
-Welcome to Gamers4Lyfe.
+    h1{
+        
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    h3{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    form {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        width: 300px; 
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: lightskyblue;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<form action="/search" method="GET">
+    <input type="text" name="search" placeholder="Search for Games Here">
+    <input type="submit" value="Search">
+</form>
+
+
+
+
