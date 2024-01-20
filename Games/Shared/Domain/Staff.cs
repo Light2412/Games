@@ -8,9 +8,7 @@ namespace Games.Shared.Domain
 {
     public class Staff: BaseDomainModel
     {
-        public int Contact { get; set; }
+        public string? ContactNumber { get; set; }
         public string? Password { get; set; }
-        public int OrderId { get; set; }
-        public virtual Order? Order { get; set; }
     }
 }

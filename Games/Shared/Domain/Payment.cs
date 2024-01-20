@@ -8,6 +8,7 @@ namespace Games.Shared.Domain
 {
     public class Payment: BaseDomainModel
     {
+        public string? TransactionType { get; set; }
         public double Price { get; set; }
     }
 }
